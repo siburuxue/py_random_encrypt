@@ -14,7 +14,7 @@ if self._salt == "":
 
 ## Install
 ```shell
-pip3 install random_tool
+pip install random_tool
 ```
 
 示例代码：
