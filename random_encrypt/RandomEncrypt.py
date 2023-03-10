@@ -62,10 +62,10 @@ class RandomEncrypt:
     def encrypt(self, data):
         (key, iv) = self._key()
         # AES-128-CBC
-        iv = iv.encode()
-        key = key.encode()
+        key_bytes = key.encode()
+        iv_bytes = iv.encode()
         msg = pad(data.encode(), AES.block_size)
-        cipher = AES.new(key, AES.MODE_CBC, iv)
+        cipher = AES.new(key_bytes, AES.MODE_CBC, iv_bytes)
         cipher_text = cipher.encrypt(msg)
         return b64encode(cipher_text).decode('utf-8'), key, iv, self._timestamp
 
