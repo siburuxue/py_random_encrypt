@@ -19,7 +19,7 @@ pip install random_tool
 
 示例代码：
 ```python
-from random_tool.random_encrypt import RandomEncrypt
+from random_encrypt import RandomEncrypt
 
 if __name__ == '__main__':
     e = RandomEncrypt({"salt": "salt"})
