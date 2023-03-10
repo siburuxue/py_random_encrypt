@@ -3,3 +3,4 @@ main.py
 build/
 dist/
 setup.py
+publish.sh
