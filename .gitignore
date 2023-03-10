@@ -2,3 +2,4 @@
 main.py
 build/
 dist/
+setup.py
